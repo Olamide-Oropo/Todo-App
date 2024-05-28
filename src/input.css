@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button{
+    @apply font-custom
+}
+.active{
+    color:rgb(37 99 235) !important;
+}
+.todo-btn{
+    @apply font-bold hover:text-gray-900 dark:hover:text-blue-600 text-gray-500 transition duration-200
+}
+.list-item{
+    @apply  p-4 border-b border-gray-300 items-center justify-between flex dark:text-rootLightGrayBlue-100 dark:hover:bg-rootDarkBlue
+}
+.check-field{
+    @apply w-5 h-5 rounded-full border border-gray-400 dark:border-gray-700 appearance-none checked:border-none checked:bg-gradient-to-bl checked:from-rootGraFrom checked:to-rootGraTo relative  dark:hover:border-blue-600 hover:border-pink-600
+}
+.check-field::after{
+    content: "✔";
+    top: 55%;
+    @apply absolute -translate-x-1/2 -translate-y-1/2 left-1/2 text-transparent checked:text-white text-xs
+}

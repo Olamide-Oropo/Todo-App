@@ -1,0 +1,17 @@
+{
+  "name": "todo-app-main",
+  "version": "1.0.0",
+  "description": "A taiwindcss and typescript built todo app project",
+  "main": "index.js",
+  "scripts": {
+    "build-css":"npx tailwindcss build -i src/input.css -o public/styles.css --watch",
+    "build-script":"tsc --w"
+  },
+  "keywords": [
+    "todoapp",
+    "tailwindcss",
+    "typescript"
+  ],
+  "author": "Oropo Habib Olamide",
+  "license": "ISC"
+}
